@@ -9,7 +9,7 @@ const swaggerDocument = YAML.parse(file)
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-const PORT = process.env.PORT || 9191;
+const PORT = process.env.PORT || 8282;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
